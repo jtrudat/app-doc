@@ -107,7 +107,7 @@ function result(){
 
 function percentWon (){
 percentWinning = (timesWon/timesPlayed).toFixed(2)*100
-percentWonDisplay.innerHTML = `Luckiness today: ${percentWinning}%`
+percentWonDisplay.innerHTML = `Luckiness today: ${timesWon} wins at ${percentWinning}%`
 }
 function Trophy(){
 
