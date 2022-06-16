@@ -110,26 +110,18 @@ percentWinning = (timesWon/timesPlayed).toFixed(2)*100
 percentWonDisplay.innerHTML = `Luckiness today: ${percentWinning}%`
 }
 function Trophy(){
-//     if(winners === 'Sorry but you lose'){
-//         let winningImage = document.getElementById('winner')
-//         winningImage.src = "./assets/donald-trump.png"
-//         console.log('loser')
-//     }
-//     else if(winners === 'You win with scissors cutting paper'||'You win with paper covering rock'||'You win with rock smashing scissors'){
-//     let winningImage = document.getElementById('winner')
-//     winningImage.src = "./assets/crownWinner.png"
-//     console.log('winner')
-//    }
-    if(winners === 'draw'){
+
+     if(winners === 'Sorry but you lose'){
+        let winningImage = document.getElementById('winner')
+        winningImage.src = "./assets/donald-trump.png"
+        console.log('loser')    
+        }
+    else if(winners === 'draw'){
     let winningImage = document.getElementById('winner')
     winningImage.src = ""
     console.log('draw')   
     }
-    else if(winners === 'Sorry but you lose'){
-    let winningImage = document.getElementById('winner')
-    winningImage.src = "./assets/donald-trump.png"
-    console.log('loser')    
-    }
+    
     else{
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/crownWinner.png"

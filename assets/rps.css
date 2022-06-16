@@ -1,5 +1,5 @@
 body{
-    background-image: url('./assets/sea-edge.png');
+    background-image: url("./sea.png");
     text-align: center;
     background-size:1950px;
     margin: auto;
