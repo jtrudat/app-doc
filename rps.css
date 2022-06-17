@@ -10,21 +10,21 @@ body{
     body {
       background-image: url("");
       background-color: lightskyblue;
-      margin-top: 150px
+      margin-top: 25px
     }
         button{
-            font-size: 10px;
+            font-size: 8px;
 
         }
         input{
-            font-size: 10px;
+            font-size: 8px;
             margin-top: 5px
         }
         #winner{
-            width: 50px;
+            width: 15px;
         }
         img{
-            width: 50px;
+            width: 15px;
         }
 }
 
