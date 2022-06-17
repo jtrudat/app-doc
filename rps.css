@@ -38,6 +38,9 @@ input{
     margin: 15px;
     box-shadow: inset -2px 2px 3px
 }
+input:hover{
+    background-color: red;
+}
 img{
     display: block;
     margin-left: auto;
