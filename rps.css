@@ -10,7 +10,7 @@ body{
     body {
       background-image: url("");
       background-color: lightskyblue;
-      margin-top: 25px
+      margin-top: 10px
     }
         button{
             font-size: 8px;
@@ -21,10 +21,10 @@ body{
             margin-top: 5px
         }
         #winner{
-            width: 15px;
+            width: 10px;
         }
         img{
-            width: 15px;
+            width: 10px;
         }
 }
 
