@@ -3,9 +3,9 @@ body{
     text-align: center;
     background-size:1950px;
     margin: auto;
-  }
+}
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
       background-image: url("");
       background-color: lightskyblue;
@@ -29,6 +29,7 @@ button{
     box-shadow: inset -2px 2px 3px;
     
 }
+
 input{
     border-radius: 45%;
     font-size: 25px;
@@ -38,50 +39,63 @@ input{
     margin: 15px;
     box-shadow: inset -2px 2px 3px
 }
+
 input:hover{
     background-color: red;
 }
+
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 section{
     display: inline-block;
     padding-left: 25px;
     padding-right: 25px;
 }
-/*container{
-    position: relative;
-    animation: mymove 3s infinite;
-    animation-timing-function: ease-in-out;
-}*/
+
 #tops{
     color: rgb(143, 65, 10);
     text-shadow: 1px 1px 1px #000;
     font-weight: bold;
+    animation: fadeIn 1.5s infinite alternate;
     /*position: relative;
     animation: spin 4s linear; */
 }
-/*#bulletin{
-   
-    animation: mymove 4s ;
-    animation-timing-function: ease-in-out;
-}*/
+
 .rocky{
     position: relative;
     animation: flybuttons 2.5s ;
     animation-timing-function: ease-in;
 }
+
 .papery{
     position: relative;
     animation: flybuttons 2.5s ;
     animation-timing-function: ease-out;
 }
+
 .cutty{
     position: relative;
     animation: flybuttons 2.5s ;
     animation-timing-function: ease-in-out;
+}
+
+
+@keyframes flybuttons{
+    from{bottom: -700px}
+    to{bottom: 0px}
+}
+
+#winner{
+    width: 150px;
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; }
+    to {opacity:90;} 
 }
 
 /*@keyframes spin {
@@ -94,11 +108,15 @@ section{
     to{left: 0px;}
     
 }*/
-@keyframes flybuttons{
-    from{bottom: -700px}
-    to{bottom: 0px}
-}
 
-#winner{
-    width: 150px;
-}
+/*#bulletin{
+   
+    animation: mymove 4s ;
+    animation-timing-function: ease-in-out;
+}*/
+
+/*container{
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-timing-function: ease-in-out;
+}*/
