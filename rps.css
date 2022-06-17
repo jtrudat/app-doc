@@ -4,6 +4,18 @@ body{
     background-size:1950px;
     margin: auto;
   }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-image: url("");
+      background-color: lightskyblue;
+      margin-top: 200px
+    }
+}
+
+
+
+
 button{
     border-radius: 40%;
     font-size: 25px;
@@ -69,7 +81,7 @@ section{
     animation-timing-function: ease-in-out;
 }
 
-@keyframes spin {
+/*@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
@@ -78,12 +90,12 @@ section{
     from{left: -400px;}
     to{left: 0px;}
     
+}*/
+@keyframes flybuttons{
+    from{bottom: -700px}
+    to{bottom: 0px}
 }
 
-@keyframes flybuttons{
-    from{bottom: -700px;}
-    to{bottom: 0px;}
-}
 #winner{
     width: 150px;
 }

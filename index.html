@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <!--meta charset="utf-8"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Rock Paper Scissors</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./rps.css" type="text/css"></link>
@@ -9,6 +10,12 @@
   </head>
   <body>
     <h1 class="w3-animate-fading" id="tops">RPS extravaganza: Rock Paper Scissors</h1>
+    <br>
+    <h3>Choose an RPS icon below and lets play</h3>
+    <button class="rocky id="rock">rock<img id= "rock" src="./assets/rock.png" alt="gray rock"></button>
+    <button class="papery" id="paper">paper<img id ="paper" src="./assets/paper.png" alt="roll of toilet paper"></button>
+    <button class="cutty" id="scissors">scissors<img id ="scissors" src="./assets/scissors.png" alt="scissors with red handle"></button>
+    <br>
     <section>
       <h2 id="computer-choice">Computer drew:</h2>
       <img id="compImg"/>
@@ -17,11 +24,7 @@
       <h2 id="user-choice">You drew:</h2>
     <img id="userImg"/>
     </section>
-    <br><br><br>
-    <button class="rocky id="rock">rock<img id= "rock" src="./assets/rock.png" alt="gray rock"></button>
-    <button class="papery" id="paper">paper<img id ="paper" src="./assets/paper.png" alt="roll of toilet paper"></button>
-    <button class="cutty" id="scissors">scissors<img id ="scissors" src="./assets/scissors.png" alt="scissors with red handle"></button>
-    <br><br>
+    <br>
     <h2 id="result">Overall Result:</h2>
     <img id="winner"></img>
     <h2 id="rounds">number of times played this session:</h2>
