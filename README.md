@@ -27,3 +27,5 @@ Inspirations for this game include various tournaments at Las Vegas HyperX Arena
 <a target="_blank" href="https://icons8.com/icon/Q38bpg3IO0F2/thumb">Thumb</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 <a target="_blank" href="https://icons8.com/icon/52209/thumbs-up-down">Thumbs Up Down</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+<a target="_blank" href="https://wrpsa.com/rocks-papers-scissors/">Rock Paper Scissors</a> icon by <a target="_blank" href="https://wrpsa.com/rocks-papers-scissors/">Damien Hirst</a>

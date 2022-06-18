@@ -72,13 +72,25 @@ input{
     font-weight: bold;
     margin-top: 10px;
     box-shadow: inset -4px -4px 3px rgba(9, 21, 123, 0.724);
-    background-image: url('./assets/rps.png');
-    background-size: 200px;
+    position: relative;
+    /*background-image: url('./assets/rps.png');
+    background-size: 200px;*/
 }
 
 #reset:hover{
     background-color: rgb(255, 1, 77);
+    /*animation-name: spin;
+    animation-duration: 5000ms;*/
 }
+
+/*@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360);
+    }
+}*/
 
 img{
     display: block;
@@ -129,16 +141,13 @@ section{
     color: rgb(113, 9, 9);
 }
 
-#lifeSavers:hover{
+/*#lifeSavers:hover{
   
-    color: rgb(230, 6, 111)
-}
+    color: rgb(198, 200, 44);
+}*/
+
 #result{
     color: rgb(113, 9, 9);
-}
-
-#result:hover{
-    color: rgb(230, 6, 111)
 }
 
 @keyframes flybuttons{
