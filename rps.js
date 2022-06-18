@@ -14,6 +14,7 @@ let winners
 let lives = 3
 let timesWon = 0
 let timesPlayed = 0
+//let jigsawSound = document.getElementById('sound')
 let computerChoiceDisplay = document.getElementById('computer-choice')
 let myChoiceDisplay = document.getElementById('user-choice')
 let resultDisplay = document.getElementById('result')
@@ -148,7 +149,9 @@ function overall(){
     else if(timesPlayed >= 5 && percentWinning < 50 && lives <= 0){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/jsk.png"
-    resultDisplay.innerHTML = `Overall Result: GAME OVER`   
+    resultDisplay.innerHTML = `Overall Result: GAME OVER`
+    let audio = new Audio('./assets/jskaudio.mp3')
+    audio.play()  
     }
     else{
         console.log('keep playing')
