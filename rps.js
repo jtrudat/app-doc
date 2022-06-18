@@ -11,6 +11,7 @@ let myChoice
 let computerChoice
 let winningPecentage
 let winners
+let lives = 3
 let timesWon = 0
 let timesPlayed = 0
 let computerChoiceDisplay = document.getElementById('computer-choice')
@@ -19,6 +20,7 @@ let resultDisplay = document.getElementById('result')
 let buttonPicks = document.querySelectorAll('button')
 let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
+let livesLeft = document.getElementById('lifeSavers')
 
 
 buttonPicks.forEach((myButton)=>{
@@ -31,6 +33,7 @@ buttonPicks.forEach((myButton)=>{
         result()
         percentWon()
         Trophy()
+        overall()
    })
 })
 function myChoiceIcon (){
@@ -79,30 +82,37 @@ function compGenerator(){
 function result(){
     if(computerChoice === myChoice){
            winners = 'draw'
+           lives -=1
     }
     else if(computerChoice === 'rock' && myChoice ==='scissors'){
         winners = 'Sorry but you lose'
+        lives -= 1
     }
     else if(computerChoice === 'paper' && myChoice === 'rock'){
         winners = 'Sorry but you lose'
+        lives -=1
     }
     else if(computerChoice === 'scissors' && myChoice === 'paper'){
         winners = 'Sorry but you lose'
     }
     else if(computerChoice === 'rock' && myChoice === 'paper'){
         timesWon += 1
-        winners = 'You win with paper covering rock'
+        winners = 'Getting lucky with paper covering rock'
+        lives +=1
     }
     else if(computerChoice === 'paper' && myChoice === 'scissors'){
         timesWon += 1
-        winners = 'You win with scissors cutting paper'
+        winners = 'Getting lucky with scissors cutting paper'
+        lives +=1
     }
     else if(computerChoice === 'scissors' && myChoice === 'rock'){
         timesWon += 1
-        winners = 'You win with rock smashing scissors'
+        winners = 'Getting lucky with rock smashing scissors'
+        lives +=1
     }
     
     resultDisplay.innerHTML = `Overall Result: ${winners}`
+    livesLeft.innerHTML = `Life savers left: ${lives}`
 }
 
 function percentWon (){
@@ -124,8 +134,23 @@ function Trophy(){
     
     else{
     let winningImage = document.getElementById('winner')
-    winningImage.src = "./assets/crownWinner.png"
+    winningImage.src = "./assets/sosothumbs.png"
     console.log('winner') 
     }
 }
 
+function overall(){
+    if(timesPlayed >= 5 && percentWinning >= 50){
+    let winningImage = document.getElementById('winner')
+    winningImage.src = "./assets/crownWinner.png"
+    resultDisplay.innerHTML = `Overall Result: YOU ARE THE CHAMPION`
+    }
+    else if(timesPlayed >= 5 && percentWinning < 50 && lives <= 0){
+    let winningImage = document.getElementById('winner')
+    winningImage.src = "./assets/jsk.png"
+    resultDisplay.innerHTML = `Overall Result: GAME OVER`   
+    }
+    else{
+        console.log('keep playing')
+    }
+}

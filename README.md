@@ -12,3 +12,5 @@ upon game loading, simply choose and click the icon for either rock, paper, or s
 
 # Credits:
 Inspirations for this game include UNLV-SD bootcamp courses of CSS, HTML and JS
+------------------
+<a target="_blank" href="https://icons8.com/icon/108377/the-jigsaw-killer">The Jigsaw Killer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
