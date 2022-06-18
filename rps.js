@@ -61,7 +61,7 @@ function myChoiceIcon (){
         scissorsImg.alt = "scissors with red handle"
     }
     timesPlayed += 1
-    timesPlayedDisplay.innerHTML = `number of times played this session: ${timesPlayed}`
+    timesPlayedDisplay.innerHTML = `number of rounds played this session: ${timesPlayed}`
 }
 
 //this function determines the computer's selection and assigns the appropriate image
@@ -162,7 +162,7 @@ function trophy(){
     }
     else if(timesPlayed >= 5 && percentWinning < 50 && lives <= 0){
     let winningImage = document.getElementById('winner')
-    winningImage.src = "./assets/jsk.png"
+    winningImage.src = "./assets/jsk1.png"
     resultDisplay.innerHTML = `Overall Result: GAME OVER`
     let audio = new Audio('./assets/jskaudio.mp3')
     audio.play()  

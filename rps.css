@@ -1,10 +1,11 @@
 body{
     background-image: url("./assets/sea.png");
     text-align: center;
-    background-size:1920px;
+    background-size:1925px;
     margin: auto;
     
 }
+
 
 @media only screen and (max-width: 700px) {
     body {
@@ -70,7 +71,9 @@ input{
     padding: 15px;
     font-weight: bold;
     margin-top: 10px;
-    box-shadow: inset -4px -4px 3px rgba(9, 21, 123, 0.724)
+    box-shadow: inset -4px -4px 3px rgba(9, 21, 123, 0.724);
+    background-image: url('./assets/rps.png');
+    background-size: 200px;
 }
 
 #reset:hover{
@@ -126,8 +129,16 @@ section{
     color: rgb(113, 9, 9);
 }
 
+#lifeSavers:hover{
+  
+    color: rgb(230, 6, 111)
+}
 #result{
     color: rgb(113, 9, 9);
+}
+
+#result:hover{
+    color: rgb(230, 6, 111)
 }
 
 @keyframes flybuttons{
