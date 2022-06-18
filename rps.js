@@ -6,6 +6,8 @@
 //display image for winning and losing
 //need to determine computer selection
 //need to compare computer selection against user selection to determine winner
+
+// declaration of all the variables to be used and elements to be selected within the DOM
 let compCheck
 let myChoice
 let computerChoice
@@ -14,7 +16,6 @@ let winners
 let lives = 3
 let timesWon = 0
 let timesPlayed = 0
-//let jigsawSound = document.getElementById('sound')
 let computerChoiceDisplay = document.getElementById('computer-choice')
 let myChoiceDisplay = document.getElementById('user-choice')
 let resultDisplay = document.getElementById('result')
@@ -23,7 +24,11 @@ let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
 
-
+//the main action of the game
+//first event listeners are placed on each button
+//next, the id of the selected button becomes the the users choice which will become a part of a series of nested if/else statements 
+    //to help determine winner
+//all functions are called from this location
 buttonPicks.forEach((myButton)=>{
         myButton.addEventListener('click', (myPick)=>{
         myChoice = myPick.target.id
@@ -33,10 +38,12 @@ buttonPicks.forEach((myButton)=>{
         compGenerator()
         result()
         percentWon()
-        Trophy()
-        overall()
+        interim()
+        trophy()
    })
 })
+
+//this function determines the display for the user,s selected image and number of times the user has played
 function myChoiceIcon (){
     if(myChoice === 'rock'){
         let rockImg = document.getElementById('userImg')
@@ -56,7 +63,10 @@ function myChoiceIcon (){
     timesPlayed += 1
     timesPlayedDisplay.innerHTML = `number of times played this session: ${timesPlayed}`
 }
+
+//this function determines the computer's selection and assigns the appropriate image
 function compGenerator(){
+    //Math.random must be used in conjunction with Math.floor to get a whole number of 1, 2 or 3
     let randomNumber = Math.floor(Math.random()*3) + 1
     compCheck = randomNumber
     if(randomNumber === 1){
@@ -79,11 +89,13 @@ function compGenerator(){
     }
     computerChoiceDisplay.innerHTML = `Computer drew: ${computerChoice}`
     console.log(compCheck, computerChoice)
-}  
+}
+
+//determines the overall result, keeps track of how many times user has won and how many extra chances the user has left
 function result(){
     if(computerChoice === myChoice){
-           winners = 'draw'
-           lives -=1
+        winners = 'draw'
+        lives -= 1
     }
     else if(computerChoice === 'rock' && myChoice ==='scissors'){
         winners = 'Sorry but you lose'
@@ -91,48 +103,49 @@ function result(){
     }
     else if(computerChoice === 'paper' && myChoice === 'rock'){
         winners = 'Sorry but you lose'
-        lives -=1
+        lives -= 1
     }
     else if(computerChoice === 'scissors' && myChoice === 'paper'){
         winners = 'Sorry but you lose'
+        lives -= 1
     }
     else if(computerChoice === 'rock' && myChoice === 'paper'){
-        timesWon += 1
         winners = 'Getting lucky with paper covering rock'
-        lives +=1
+        lives += 1
+        timesWon += 1
     }
     else if(computerChoice === 'paper' && myChoice === 'scissors'){
-        timesWon += 1
         winners = 'Getting lucky with scissors cutting paper'
-        lives +=1
+        lives += 1
+        timesWon += 1
     }
     else if(computerChoice === 'scissors' && myChoice === 'rock'){
-        timesWon += 1
         winners = 'Getting lucky with rock smashing scissors'
-        lives +=1
+        lives += 1
+        timesWon += 1
     }
-    
     resultDisplay.innerHTML = `Overall Result: ${winners}`
     livesLeft.innerHTML = `Life savers left: ${lives}`
 }
 
+// determines the user's winning percentage
 function percentWon (){
 percentWinning = (timesWon/timesPlayed).toFixed(2)*100
 percentWonDisplay.innerHTML = `Luckiness today: ${timesWon} wins at ${percentWinning}%`
 }
-function Trophy(){
 
-     if(winners === 'Sorry but you lose'){
-        let winningImage = document.getElementById('winner')
-        winningImage.src = "./assets/donald-trump.png"
-        console.log('loser')    
-        }
+// determines the image displayed after each try
+function interim(){
+    if(winners === 'Sorry but you lose'){
+    let winningImage = document.getElementById('winner')
+    winningImage.src = "./assets/thumbsdown.png"
+    console.log('loser')   
+    }
     else if(winners === 'draw'){
     let winningImage = document.getElementById('winner')
     winningImage.src = ""
-    console.log('draw')   
+    console.log('draw')
     }
-    
     else{
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/sosothumbs.png"
@@ -140,7 +153,8 @@ function Trophy(){
     }
 }
 
-function overall(){
+// determines if player has won or lost the game and displays an image appropriately
+function trophy(){
     if(timesPlayed >= 5 && percentWinning >= 50){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/crownWinner.png"
@@ -154,6 +168,6 @@ function overall(){
     audio.play()  
     }
     else{
-        console.log('keep playing')
+    console.log('keep playing')
     }
 }

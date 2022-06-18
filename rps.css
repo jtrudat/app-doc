@@ -35,8 +35,8 @@ body{
             padding-bottom: 3px;
             padding-right: 0px;   
         }
-        h1{
-            font-size: 20px
+        #tops{
+            font-size: 25px
         }
         h2{
             font-size: 15px;
@@ -59,7 +59,7 @@ button{
     padding: 20px;
     background-image: linear-gradient(to top left, gray, silver, brown);
     margin: 30px;
-    box-shadow: inset -2px 2px 3px;
+    box-shadow: inset -4px -4px 3px;
     
 }
 
@@ -70,11 +70,11 @@ input{
     padding: 15px;
     font-weight: bold;
     margin-top: 10px;
-    box-shadow: inset -2px 2px 3px
+    box-shadow: inset -4px -4px 3px rgba(172, 12, 12, 0.717)
 }
 
-input:hover{
-    background-color: red;
+#reset:hover{
+    background-color: rgb(255, 1, 77);
 }
 
 img{
@@ -90,10 +90,11 @@ section{
     padding-right: 25px;
 }
 
-#tops{
+.intro{
     color: rgb(143, 65, 10);
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 3px 3px 1px rgba(112, 85, 85, 0.229);
     font-weight: bold;
+    font-size: 37px;
     animation: fadeIn 1.5s infinite alternate;
     /*position: relative;
     animation: spin 4s linear; */
@@ -117,20 +118,28 @@ section{
     animation-timing-function: ease-in-out;
 }
 
+#winner{
+    width: 115px;
+}
+
+#lifeSavers{
+    color: rgb(113, 9, 9);
+}
+
+#result{
+    color: rgb(113, 9, 9);
+}
 
 @keyframes flybuttons{
     from{bottom: -700px}
     to{bottom: 0px}
 }
 
-#winner{
-    width: 115px;
-}
-
 @keyframes fadeIn { 
     from { opacity: 0; }
     to {opacity:90;} 
 }
+
 
 /*@keyframes spin {
     0% { transform: rotate(0deg); }
