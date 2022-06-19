@@ -39,9 +39,11 @@ body{
         #tops{
             font-size: 25px
         }
+        
         h2{
             font-size: 15px;
         }
+
         #startMessage{
             font-size: 20px;
         }
@@ -110,7 +112,7 @@ section{
     color: rgb(143, 65, 10);
     text-shadow: 3px 3px 1px rgba(112, 85, 85, 0.229);
     font-weight: bold;
-    font-size: 37px;
+    font-size: 40px;
     animation: fadeIn 1.5s infinite alternate;
     /*position: relative;
     animation: spin 4s linear; */
@@ -152,9 +154,9 @@ section{
 }
 
 #tops{
-    font-size: 40px;
+    font-size: px;
 }
-#startMessage{
+.intro1{
     font-size: 25px;
 }
 
