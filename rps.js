@@ -5,6 +5,7 @@ let myChoice
 let computerChoice
 let winningPecentage
 let winners
+let trophiesWon = 0
 let lives = 3
 let timesWon = 0
 let timesPlayed = 0
@@ -17,7 +18,6 @@ let buttonPicks = document.querySelectorAll('button')
 let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
-
 
 //the main action of the game
 //first event listeners are placed on each button
@@ -35,7 +35,7 @@ buttonPicks.forEach((myButton)=>{
         result()
         percentWon()
         interim()
-        trophy()     
+        trophy()        
    })
 })
 
@@ -127,7 +127,7 @@ function result(){
 // determines the user's winning percentage
 function percentWon (){
 percentWinning = (timesWon/timesPlayed).toFixed(2)*100
-percentWonDisplay.innerHTML = `Luckiness today: ${timesWon} wins at ${percentWinning}%`
+percentWonDisplay.innerHTML = `Luckiness today: Wins-${timesWon}, Trophies-${trophiesWon}, at ${percentWinning}%`
 }
 
 // determines the image displayed after each try
@@ -155,6 +155,8 @@ function trophy(){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/crownWinner.png"
     resultDisplay.innerHTML = `Overall Result: YOU ARE THE CHAMPION`
+    trophiesWon += 1
+    percentWonDisplay.innerHTML = `Luckiness today: Wins-${timesWon}, Trophies-${trophiesWon}, at ${percentWinning}%`
     }
     else if(timesPlayed >= 5 && percentWinning < 50 && lives <= 0){
     let winningImage = document.getElementById('winner')
