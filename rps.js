@@ -6,6 +6,7 @@
 //display image for winning and losing
 //need to determine computer selection
 //need to compare computer selection against user selection to determine winner
+// change url wirth git remote set-url origin https://xxxx
 
 // declaration of all the variables to be used and elements to be selected within the DOM
 let compCheck
@@ -16,6 +17,7 @@ let winners
 let lives = 3
 let timesWon = 0
 let timesPlayed = 0
+let floater = document.querySelector('#users')
 let startUp = document.getElementById('startMessage')
 let computerChoiceDisplay = document.getElementById('computer-choice')
 let myChoiceDisplay = document.getElementById('user-choice')
@@ -24,6 +26,27 @@ let buttonPicks = document.querySelectorAll('button')
 let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
+// onload()
+// function onload(){   
+//     let set1 = document.createElement('br')
+//     set1.id = 'bogus'
+//     startMessage.appendChild(set1)
+//     let set2 = document.createElement('input')
+//     set2.type = 'button'
+//     set2.value = 'super test'
+//     set2.id = 'mover'
+//     startMessage.appendChild(set2)
+// }
+
+
+// greetings()
+// async function greetings(){
+//     let audio = new Audio('./assets/jskaudio.mp3')
+//     await audio.play()
+//     let audio1 = new Audio('./assets/gameOver.mp3')
+//     await audio1.play()
+    
+// }
 
 //the main action of the game
 //first event listeners are placed on each button
@@ -41,7 +64,7 @@ buttonPicks.forEach((myButton)=>{
         result()
         percentWon()
         interim()
-        trophy()
+        trophy()     
    })
 })
 
@@ -167,7 +190,9 @@ function trophy(){
     winningImage.src = "./assets/jsk1.png"
     resultDisplay.innerHTML = `Overall Result: GAME OVER`
     let audio = new Audio('./assets/jskaudio.mp3')
-    audio.play()  
+    audio.play()
+    let audio1 = new Audio('./assets/gameover2.mp3')
+    audio1.play()  
     }
     else{
     console.log('keep playing')
