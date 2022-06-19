@@ -39,13 +39,13 @@ body{
         #tops{
             font-size: 25px
         }
-        
-        h2{
+
+        #startMessage{
             font-size: 15px;
         }
 
-        #startMessage{
-            font-size: 20px;
+        h2{
+            font-size: 15px;
         }
 
         #compImg, #userImg{
@@ -118,6 +118,9 @@ section{
     animation: spin 4s linear; */
 }
 
+.intro1{
+    font-size: 25px;
+}
 .rocky{
     position: relative;
     animation: flybuttons 2.5s ;
@@ -153,12 +156,7 @@ section{
     color: rgb(113, 9, 9);
 }
 
-#tops{
-    font-size: px;
-}
-.intro1{
-    font-size: 25px;
-}
+
 
 @keyframes flybuttons{
     from{bottom: -700px}
