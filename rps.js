@@ -16,6 +16,7 @@ let winners
 let lives = 3
 let timesWon = 0
 let timesPlayed = 0
+let startUp = document.getElementById('startMessage')
 let computerChoiceDisplay = document.getElementById('computer-choice')
 let myChoiceDisplay = document.getElementById('user-choice')
 let resultDisplay = document.getElementById('result')
@@ -34,6 +35,7 @@ buttonPicks.forEach((myButton)=>{
         myChoice = myPick.target.id
         console.log(myChoice)
         myChoiceDisplay.innerHTML = `You drew : ${myChoice}`
+        startUp.innerHTML = ``
         myChoiceIcon()
         compGenerator()
         result()
