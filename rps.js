@@ -1,12 +1,3 @@
-//display a basic title of the game being played
-//display the selection's of both the user and the computer
-//display three buttons with both visual and written depiction of the user's selection of paper rock scissors
-//display a button for reset
-//display statistics for number of times played and winning percentages
-//display image for winning and losing
-//need to determine computer selection
-//need to compare computer selection against user selection to determine winner
-// change url wirth git remote set-url origin https://xxxx
 
 // declaration of all the variables to be used and elements to be selected within the DOM
 let compCheck
@@ -26,32 +17,12 @@ let buttonPicks = document.querySelectorAll('button')
 let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
-// onload()
-// function onload(){   
-//     let set1 = document.createElement('br')
-//     set1.id = 'bogus'
-//     startMessage.appendChild(set1)
-//     let set2 = document.createElement('input')
-//     set2.type = 'button'
-//     set2.value = 'super test'
-//     set2.id = 'mover'
-//     startMessage.appendChild(set2)
-// }
 
-
-// greetings()
-// async function greetings(){
-//     let audio = new Audio('./assets/jskaudio.mp3')
-//     await audio.play()
-//     let audio1 = new Audio('./assets/gameOver.mp3')
-//     await audio1.play()
-    
-// }
 
 //the main action of the game
 //first event listeners are placed on each button
 //next, the id of the selected button becomes the the users choice which will become a part of a series of nested if/else statements 
-    //to help determine winner
+//to help determine winner
 //all functions are called from this location
 buttonPicks.forEach((myButton)=>{
         myButton.addEventListener('click', (myPick)=>{
@@ -135,17 +106,17 @@ function result(){
         lives -= 1
     }
     else if(computerChoice === 'rock' && myChoice === 'paper'){
-        winners = 'Getting lucky with paper covering rock'
+        winners = 'Getting lucky with paper covering rock, but no trophy just yet'
         lives += 1
         timesWon += 1
     }
     else if(computerChoice === 'paper' && myChoice === 'scissors'){
-        winners = 'Getting lucky with scissors cutting paper'
+        winners = 'Getting lucky with scissors cutting paper, but no trophy just yet'
         lives += 1
         timesWon += 1
     }
     else if(computerChoice === 'scissors' && myChoice === 'rock'){
-        winners = 'Getting lucky with rock smashing scissors'
+        winners = 'Getting lucky with rock smashing scissors, but no trophy just yet'
         lives += 1
         timesWon += 1
     }
