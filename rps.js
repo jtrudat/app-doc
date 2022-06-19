@@ -106,17 +106,17 @@ function result(){
         lives -= 1
     }
     else if(computerChoice === 'rock' && myChoice === 'paper'){
-        winners = 'Getting lucky with paper covering rock, but no trophy just yet'
+        winners = 'Getting lucky, paper covers rock, but no trophy yet'
         lives += 1
         timesWon += 1
     }
     else if(computerChoice === 'paper' && myChoice === 'scissors'){
-        winners = 'Getting lucky with scissors cutting paper, but no trophy just yet'
+        winners = 'Getting lucky, scissors cut paper, but no trophy yet'
         lives += 1
         timesWon += 1
     }
     else if(computerChoice === 'scissors' && myChoice === 'rock'){
-        winners = 'Getting lucky with rock smashing scissors, but no trophy just yet'
+        winners = 'Getting lucky, rock smashes scissors, but no trophy yet'
         lives += 1
         timesWon += 1
     }
