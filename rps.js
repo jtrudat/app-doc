@@ -18,33 +18,12 @@ let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
 
-
-// function onUp(){   
-//     let set1 = document.createElement('br')
-//     set1.id = 'bogus'
-//     startMessage.appendChild(set1)
-//     let set2 = document.createElement('input')
-//     set2.type = 'button'
-//     set2.value = 'remove test'
-//     set2.id = 'mover'
-//     startMessage.appendChild(set2)
-//     set2.addEventListener('click', (tagit)=>{
-//         set3 = tagit.target.id
-//         console.log(set3)
-//         console.log('hello there')
-//         set2.parentElement.removeChild(set2)
-//     })
-// }
-// onUp()
-
-
-
-
 //the main action of the game
 //first event listeners are placed on each button
 //next, the id of the selected button becomes the the users choice which will become a part of a series of nested if/else statements 
 //to help determine winner
 //all functions are called from this location
+//this is for mobile or desktop
 buttonPicks.forEach((myButton)=>{
         myButton.addEventListener('click', (myPick)=>{
         myChoice = myPick.target.id
@@ -60,21 +39,45 @@ buttonPicks.forEach((myButton)=>{
    })
 })
 
+//this is for desktop keystroke experience only
+ document.addEventListener('keydown', (keyPressed) => {
+    if (keyPressed.key === 'ArrowDown') {
+        myChoice = 'paper'
+    } else if (keyPressed.key === 'ArrowLeft') {
+      myChoice = 'rock'
+    } else if (keyPressed.key === 'ArrowRight') {
+      myChoice = 'scissors'
+    } else if (keyPressed.key === 'ArrowUp'){
+        history.go(0)
+    }
+    console.log(myChoice)
+    myChoiceDisplay.innerHTML = `You drew : ${myChoice}`
+    startUp.innerHTML = ``
+    myChoiceIcon()
+    compGenerator()
+    result()
+    percentWon()
+    interim()
+    trophy()        
+  }) 
+
+  
+
 //this function determines the display for the user,s selected image and number of times the user has played
 function myChoiceIcon (){
     if(myChoice === 'rock'){
         let rockImg = document.getElementById('userImg')
-        rockImg.src = "./assets/rock.png"
+        rockImg.src = "./assets/rockHand3.png"
         rockImg.alt = "a rock"
     }
     else if(myChoice === 'paper'){
         let paperImg = document.getElementById('userImg')
-        paperImg.src = "./assets/paper.png"
+        paperImg.src = "./assets/paperHand3.png"
         paperImg.alt = "a roll of toilet paper"
     }
     else if(myChoice === 'scissors'){
         let scissorsImg = document.getElementById('userImg')
-        scissorsImg.src = "./assets/scissors.png"
+        scissorsImg.src = "./assets/scissorsHand3.png"
         scissorsImg.alt = "scissors with red handle"
     }
     timesPlayed += 1
@@ -89,19 +92,19 @@ function compGenerator(){
     if(randomNumber === 1){
         computerChoice = 'rock'
         let rockImg = document.getElementById('compImg')
-        rockImg.src = "./assets/rock.png"
+        rockImg.src = "./assets/rockHand3.png"
         rockImg.alt = 'gray rock' 
     }
     else if(randomNumber === 2){
         computerChoice = 'paper'
         let paperImg = document.getElementById('compImg')
-        paperImg.src = "./assets/paper.png"
+        paperImg.src = "./assets/paperHand3.png"
         paperImg.alt = 'roll of toilet paper'
     }
    else if(randomNumber === 3){
         computerChoice = 'scissors'
         let scissorsImg = document.getElementById('compImg')
-        scissorsImg.src = "./assets/scissors.png"
+        scissorsImg.src = "./assets/scissorsHand3.png"
         scissorsImg.alt = "red handle scissors"
     }
     computerChoiceDisplay.innerHTML = `Computer drew: ${computerChoice}`
@@ -161,7 +164,7 @@ function interim(){
     }
     else if(winners === 'draw'){
     let winningImage = document.getElementById('winner')
-    winningImage.src = ""
+    winningImage.src = "./assets/rpsdemo1.png"
     winningImage.alt = ""
     console.log('draw')
     }

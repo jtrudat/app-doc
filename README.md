@@ -11,7 +11,7 @@ a simple game of rock, paper, scissors. This is a 1 player game versus the compu
 no need to install anything, just play
 
 # Gameplay:
-upon game loading, simply choose and click the icon for either rock, paper, or scissors and view your progress against the computer for as many rounds as you like. You must have a percentage of at least 50% over 5 tries in order to win. After 5 rounds its more of a statistical game of how many trophies you can acquire and how many rounds you can go before losing
+upon game loading, simply choose and click the icon for either rock, paper, or scissors and view your progress against the computer for as many rounds as you like. You must have a percentage of at least 50% over 5 tries in order to win. After 5 rounds its more of a statistical game of how many trophies you can acquire and how many rounds you can go before losing.
 Statistics are automatically presented on :
 - the number of times you've played 
 - the user's winning percentage
@@ -29,5 +29,9 @@ Inspirations for this game include various tournaments at Las Vegas HyperX Arena
 <a target="_blank" href="https://icons8.com/icon/52209/thumbs-up-down">Thumbs Up Down</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 <a target="_blank" href="https://wrpsa.com/rocks-papers-scissors/">Rock Paper Scissors</a> icon by <a target="_blank" href="https://wrpsa.com/rocks-papers-scissors/">Damien Hirst</a>
+
+<a target="_blank" href="https://icons8.com/icon/9gX3N6oWZVi3/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+<a target="_blank" href="https://icons8.com/icon/UU1CYnCFbv8C/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 <a target="_blank" href="https://www.soundboard.com/search.aspx?keyword=Jigsaw">background audio</a> by <a target="_blank" href="https://www.soundboard.com/">Soundboard</a>

@@ -32,8 +32,8 @@ body{
             width: 40px;
             font-size: 0px;
             padding-left: 0px;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            padding-top: 4px;
+            padding-bottom: 4px;
             padding-right: 0px;   
         }
         #tops{
@@ -141,6 +141,7 @@ section{
 
 #winner{
     width: 115px;
+    animation: spin 2.5s;
 }
 
 #lifeSavers{
@@ -170,16 +171,16 @@ section{
 
 @keyframes fadeIn { 
     from { opacity: 0; }
-    to {opacity:90;} 
+    to {opacity:100;} 
 }
 
 
-/*@keyframes spin {
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-@keyframes mymove{
+/*@keyframes mymove{
     from{left: -400px;}
     to{left: 0px;}
     
