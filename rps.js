@@ -1,4 +1,5 @@
-// declaration of all the variables to be used and elements to be selected within the DOM
+//declaration of all the variables to be used and elements to be selected within the DOM
+//preference is to have all variables exist outside of functions to facilitate access by any function
 let compCheck
 let myChoice
 let computerChoice
@@ -18,7 +19,7 @@ let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
 
-//the main action of the game
+//this section is the main action of the game
 //first event listeners are placed on each button
 //next, the id of the selected button becomes the the users choice which will become a part of a series of nested if/else statements 
 //to help determine winner
@@ -61,9 +62,7 @@ buttonPicks.forEach((myButton)=>{
     trophy()        
   }) 
 
-  
-
-//this function determines the display for the user,s selected image and number of times the user has played
+//this function determines the display for the user's selected image and number of times the user has played
 function myChoiceIcon (){
     if(myChoice === 'rock'){
         let rockImg = document.getElementById('userImg')
@@ -176,7 +175,7 @@ function interim(){
     }
 }
 
-// determines if player has won or lost the game and displays an image appropriately
+//determines if player has won or lost the game and displays an image appropriately
 function trophy(){
     if(timesPlayed >= 5 && percentWinning >= 50 && winners !== 'Sorry but you lose' && winners !== 'draw'){
     let winningImage = document.getElementById('winner')

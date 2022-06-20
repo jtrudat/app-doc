@@ -6,7 +6,6 @@ body{
     
 }
 
-
 @media only screen and (max-width: 700px) {
     body {
       background-image: url("");
@@ -76,24 +75,13 @@ input{
     margin-top: 10px;
     box-shadow: inset -4px -4px 3px rgba(9, 21, 123, 0.724);
     position: relative;
-    /*background-image: url('./assets/rps.png');
-    background-size: 200px;*/
+   
 }
 
 #reset:hover{
     background-color: rgb(255, 1, 77);
-    /*animation-name: spin;
-    animation-duration: 5000ms;*/
+   
 }
-
-/*@keyframes spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360);
-    }
-}*/
 
 img{
     display: block;
@@ -114,13 +102,12 @@ section{
     font-weight: bold;
     font-size: 40px;
     animation: fadeIn 1.5s infinite alternate;
-    /*position: relative;
-    animation: spin 4s linear; */
 }
 
 .intro1{
     font-size: 25px;
 }
+
 .rocky{
     position: relative;
     animation: flybuttons 2.5s ;
@@ -148,21 +135,9 @@ section{
     color: rgb(113, 9, 9);
 }
 
-/*#mover{
-    position: relative;
-    top: 0px;
-    left: 0px
-}*/
-/*#lifeSavers:hover{
-  
-    color: rgb(198, 200, 44);
-}*/
-
 #result{
     color: rgb(113, 9, 9);
 }
-
-
 
 @keyframes flybuttons{
     from{bottom: -700px}
@@ -174,26 +149,8 @@ section{
     to {opacity:100;} 
 }
 
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/*@keyframes mymove{
-    from{left: -400px;}
-    to{left: 0px;}
-    
-}*/
-
-/*#bulletin{
-   
-    animation: mymove 4s ;
-    animation-timing-function: ease-in-out;
-}*/
-
-/*container{
-    position: relative;
-    animation: mymove 3s infinite;
-    animation-timing-function: ease-in-out;
-}*/

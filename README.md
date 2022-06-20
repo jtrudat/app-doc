@@ -17,8 +17,16 @@ Statistics are automatically presented on :
 - the user's winning percentage
 - number of life savers left
 
+# Controls:
+- Mobile: touchscreen icons
+- Desktop: touchscreen icons or arrow keys
+  - left arrow: rock
+  - down arrow: paper
+  - right arrow: scissors
 # Credits:
-Inspirations for this game include various tournaments at Las Vegas HyperX Arena
+- Inspirations for this game include various tournaments at Las Vegas HyperX Arena.
+- Mobile experience is designed around the idea of playing with just one hand, having all the buttons accessible by just the thumbs near the bottom of the screen
+- Desktop use experience is designed around keyboard use with the arrows keys being used to provide the quickest and easiest responses
 
 <a target="_blank" href="https://icons8.com/icon/108377/the-jigsaw-killer">The Jigsaw Killer</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 ------------------
