@@ -1,4 +1,3 @@
-
 // declaration of all the variables to be used and elements to be selected within the DOM
 let compCheck
 let myChoice
@@ -18,6 +17,28 @@ let buttonPicks = document.querySelectorAll('button')
 let timesPlayedDisplay = document.getElementById('rounds')
 let percentWonDisplay = document.getElementById('percentStat')
 let livesLeft = document.getElementById('lifeSavers')
+
+
+// function onUp(){   
+//     let set1 = document.createElement('br')
+//     set1.id = 'bogus'
+//     startMessage.appendChild(set1)
+//     let set2 = document.createElement('input')
+//     set2.type = 'button'
+//     set2.value = 'remove test'
+//     set2.id = 'mover'
+//     startMessage.appendChild(set2)
+//     set2.addEventListener('click', (tagit)=>{
+//         set3 = tagit.target.id
+//         console.log(set3)
+//         console.log('hello there')
+//         set2.parentElement.removeChild(set2)
+//     })
+// }
+// onUp()
+
+
+
 
 //the main action of the game
 //first event listeners are placed on each button
