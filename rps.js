@@ -151,7 +151,7 @@ function interim(){
 
 // determines if player has won or lost the game and displays an image appropriately
 function trophy(){
-    if(timesPlayed >= 5 && percentWinning >= 50){
+    if(timesPlayed >= 5 && percentWinning >= 50 && winners !== 'Sorry but you lose' && winners !== 'draw'){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/crownWinner.png"
     resultDisplay.innerHTML = `Overall Result: YOU ARE THE CHAMPION`
