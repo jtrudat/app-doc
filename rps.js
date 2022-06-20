@@ -135,16 +135,19 @@ function interim(){
     if(winners === 'Sorry but you lose'){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/thumbsdown.png"
+    winningImage.alt = ""
     console.log('loser')   
     }
     else if(winners === 'draw'){
     let winningImage = document.getElementById('winner')
     winningImage.src = ""
+    winningImage.alt = ""
     console.log('draw')
     }
     else{
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/sosothumbs.png"
+    winningImage.alt = ""
     console.log('winner') 
     }
 }
@@ -154,6 +157,7 @@ function trophy(){
     if(timesPlayed >= 5 && percentWinning >= 50 && winners !== 'Sorry but you lose' && winners !== 'draw'){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/crownWinner.png"
+    winningImage.alt = ""
     resultDisplay.innerHTML = `Overall Result: YOU ARE THE CHAMPION`
     trophiesWon += 1
     percentWonDisplay.innerHTML = `Luckiness today: Wins-${timesWon}, Trophies-${trophiesWon}, at ${percentWinning}%`
@@ -161,6 +165,7 @@ function trophy(){
     else if(timesPlayed >= 5 && percentWinning < 50 && lives <= 0){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/jsk1.png"
+    winningImage.alt = ""
     resultDisplay.innerHTML = `Overall Result: GAME OVER`
     let audio = new Audio('./assets/jskaudio.mp3')
     audio.play()
