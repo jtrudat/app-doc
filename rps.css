@@ -141,7 +141,7 @@ section{
 
 #winner{
     width: 115px;
-    animation: spin 2.5s;
+    animation: spin 1.25s alternate 2;
 }
 
 #lifeSavers{
