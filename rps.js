@@ -28,7 +28,7 @@ let livesLeft = document.getElementById('lifeSavers')
 buttonPicks.forEach((myButton)=>{
         myButton.addEventListener('click', (myPick)=>{
         myChoice = myPick.target.id
-        console.log(myChoice)
+        
         myChoiceDisplay.innerHTML = `You drew : ${myChoice}`
         startUp.innerHTML = ``
         myChoiceIcon()
@@ -51,7 +51,7 @@ buttonPicks.forEach((myButton)=>{
     } else if (keyPressed.key === 'ArrowUp'){
         history.go(0)
     }
-    console.log(myChoice)
+    
     myChoiceDisplay.innerHTML = `You drew : ${myChoice}`
     startUp.innerHTML = ``
     myChoiceIcon()
@@ -107,8 +107,7 @@ function compGenerator(){
         scissorsImg.alt = "red handle scissors"
     }
     computerChoiceDisplay.innerHTML = `Computer drew: ${computerChoice}`
-    console.log(compCheck, computerChoice)
-}
+    }
 
 //determines the overall result, keeps track of how many times user has won and how many extra chances the user has left
 function result(){
@@ -159,19 +158,18 @@ function interim(){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/thumbsdown.png"
     winningImage.alt = ""
-    console.log('loser')   
+     
     }
     else if(winners === 'draw'){
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/rpsdemo1.png"
     winningImage.alt = ""
-    console.log('draw')
+    
     }
     else{
     let winningImage = document.getElementById('winner')
     winningImage.src = "./assets/sosothumbs.png"
     winningImage.alt = ""
-    console.log('winner') 
     }
 }
 
@@ -194,8 +192,5 @@ function trophy(){
     audio.play()
     let audio1 = new Audio('./assets/gameover2.mp3')
     audio1.play()  
-    }
-    else{
-    console.log('keep playing')
     }
 }
