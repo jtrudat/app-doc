@@ -12,7 +12,7 @@ no need to install anything, just play
 
 # Gameplay:
 upon game loading, simply choose and click the icon for either rock, paper, or scissors and view your progress against the computer for as many rounds as you like. You must have a percentage of at least 50% over 5 tries in order to win. After 5 rounds its more of a statistical game of how many trophies you can acquire and how many rounds you can go before losing.
-Statistics are automatically presented on :
+Statistics are automatically presented on:
 - the number of times you've played 
 - the user's winning percentage
 - number of life savers left
