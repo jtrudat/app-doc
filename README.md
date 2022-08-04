@@ -22,7 +22,6 @@ Statistics are automatically presented on:
 - Desktop: touchscreen icons or arrow keys
   - left arrow: rock
   - down arrow: paper
-  - right arrow: scissors
 # Credits:
 - Inspirations for this game include various tournaments at Las Vegas HyperX Arena.
 - Mobile experience is designed around the idea of playing with just one hand, having all the buttons accessible by just the thumbs near the bottom of the screen
