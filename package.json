@@ -1,0 +1,20 @@
+{
+  "name": "try-your-luck-paper-rock-scissors",
+  "version": "1.0.0",
+  "description": "RPS: Rock Paper Scissors # Project description:  a simple game of rock, paper, scissors. This is a 1 player game versus the computer  # Table of contents: - Installation - Game play - Credits",
+  "main": "rps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtrudat/RPS-Rock-Paper-Scissors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtrudat/RPS-Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/jtrudat/RPS-Rock-Paper-Scissors#readme"
+}
