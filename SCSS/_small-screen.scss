@@ -1,0 +1,45 @@
+@media only screen and (max-width: 700px) {
+    body {
+      background-image: url("");
+      background-color: lightskyblue;
+      margin: auto;
+    }
+        button{
+            font-size: 8px;
+            padding: 3px;
+            margin: 1px;
+
+        }
+        #reset{
+            font-size: 10px;
+            margin-top: 0px;
+            padding: 8px;
+        }
+        #winner{
+            width: 75px;
+            
+        }
+        #rock, #paper, #scissors{
+            width: 40px;
+            font-size: 0px;
+            padding-left: 0px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-right: 0px;   
+        }
+        #tops{
+            font-size: 28px
+        }
+
+        #startMessage{
+            font-size: 15px;
+        }
+
+        h2{
+            font-size: 15px;
+        }
+
+        #compImg, #userImg{
+            width: 50px
+        }
+}
