@@ -1,12 +1,15 @@
 @use 'button';
-@use 'small-screen';
+@use 'screen-size';
+@use 'animations-fly';
+@use 'animations-fade-in';
+@use 'animations-spin';
+
 
 body{
     background-image: url("../assets/sea.png");
     text-align: center;
     background-size:1925px;
     margin: auto;
-    
 }
 
 
@@ -43,40 +46,15 @@ section{
     padding-right: 25px;
 }
 
-.intro{
-    color: rgb(143, 65, 10);
-    text-shadow: 3px 3px 1px rgba(112, 85, 85, 0.229);
-    font-weight: bold;
-    font-size: 40px;
-    animation: fadeIn 1.5s infinite alternate;
-}
+
 
 .intro1{
     font-size: 25px;
 }
 
-.rocky{
-    position: relative;
-    animation: flybuttons 2.5s ;
-    animation-timing-function: ease-in;
-}
 
-.papery{
-    position: relative;
-    animation: flybuttons 2.5s ;
-    animation-timing-function: ease-out;
-}
 
-.cutty{
-    position: relative;
-    animation: flybuttons 2.5s ;
-    animation-timing-function: ease-in-out;
-}
 
-#winner{
-    width: 115px;
-    animation: spin 1.25s alternate 2;
-}
 
 #lifeSavers{
     color: rgb(113, 9, 9);
@@ -86,17 +64,7 @@ section{
     color: rgb(113, 9, 9);
 }
 
-@keyframes flybuttons{
-    from{bottom: -700px}
-    to{bottom: 0px}
-}
 
-@keyframes fadeIn { 
-    from { opacity: 0; }
-    to {opacity:100;} 
-}
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+
+

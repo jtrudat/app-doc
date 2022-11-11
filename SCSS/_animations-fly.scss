@@ -1,0 +1,22 @@
+.rocky{
+    position: relative;
+    animation: flybuttons 2.5s ;
+    animation-timing-function: ease-in;
+}
+
+.papery{
+    position: relative;
+    animation: flybuttons 2.5s ;
+    animation-timing-function: ease-out;
+}
+
+.cutty{
+    position: relative;
+    animation: flybuttons 2.5s ;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flybuttons{
+    from{bottom: -700px}
+    to{bottom: 0px}
+}

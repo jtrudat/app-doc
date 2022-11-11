@@ -1,0 +1,12 @@
+.intro{
+    color: rgb(143, 65, 10);
+    text-shadow: 3px 3px 1px rgba(112, 85, 85, 0.229);
+    font-weight: bold;
+    font-size: 40px;
+    animation: fadeIn 1.5s infinite alternate;
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; }
+    to {opacity:100;} 
+}
