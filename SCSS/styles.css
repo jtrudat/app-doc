@@ -53,20 +53,35 @@ button {
 }
 .rocky {
   position: relative;
-  animation: flybuttons 2.5s;
-  animation-timing-function: ease-in;
+  -webkit-animation: flybuttons 2.5s;
+          animation: flybuttons 2.5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 .papery {
   position: relative;
-  animation: flybuttons 2.5s;
-  animation-timing-function: ease-out;
+  -webkit-animation: flybuttons 2.5s;
+          animation: flybuttons 2.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .cutty {
   position: relative;
-  animation: flybuttons 2.5s;
-  animation-timing-function: ease-in-out;
+  -webkit-animation: flybuttons 2.5s;
+          animation: flybuttons 2.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes flybuttons {
+  from {
+    bottom: -700px;
+  }
+  to {
+    bottom: 0px;
+  }
 }
 
 @keyframes flybuttons {
@@ -82,7 +97,17 @@ button {
   text-shadow: 3px 3px 1px rgba(112, 85, 85, 0.229);
   font-weight: bold;
   font-size: 40px;
-  animation: fadeIn 1.5s infinite alternate;
+  -webkit-animation: fadeIn 1.5s infinite alternate;
+          animation: fadeIn 1.5s infinite alternate;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 @keyframes fadeIn {
@@ -95,7 +120,17 @@ button {
 }
 #winner {
   width: 115px;
-  animation: spin 1.25s alternate 2;
+  -webkit-animation: spin 1.25s alternate 2;
+          animation: spin 1.25s alternate 2;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
@@ -151,6 +186,4 @@ section {
 
 #result {
   color: rgb(113, 9, 9);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
