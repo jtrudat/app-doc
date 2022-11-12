@@ -1,0 +1,208 @@
+button {
+    border-radius: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+    background-color: rgba(255, 166, 0, 0.471);
+    border: 0;
+    padding: 20px;
+    background-image: linear-gradient(to top left, gray, silver, brown);
+    margin: 30px;
+    box-shadow: inset -4px -4px 3px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    body {
+      background-image: url("");
+      background-color: lightskyblue;
+      margin: auto;
+    }
+    button {
+      font-size: 8px;
+      padding: 3px;
+      margin: 1px;
+    }
+    #reset {
+      font-size: 10px;
+      margin-top: 0px;
+      padding: 8px;
+    }
+    #winner {
+      width: 75px;
+    }
+    #rock {
+      width: 40px;
+      font-size: 7px;
+      padding-left: 0px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 0px;
+      margin-right: 5px;
+    }
+    #paper {
+      width: 40px;
+      font-size: 7px;
+      padding-left: 0px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 0px;
+      margin-right: 5px;
+    }
+    #scissors {
+      width: 40px;
+      font-size: 7px;
+      padding-left: 0px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-right: 0px;
+      margin-right: 5px;
+    }
+    #tops {
+      font-size: 28px;
+    }
+    #startMessage {
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    #compImg, #userImg {
+      width: 50px;
+    }
+  }
+  .rocky {
+    position: relative;
+    -webkit-animation: flybuttons 2.5s;
+            animation: flybuttons 2.5s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  
+  .papery {
+    position: relative;
+    -webkit-animation: flybuttons 2.5s;
+            animation: flybuttons 2.5s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  
+  .cutty {
+    position: relative;
+    -webkit-animation: flybuttons 2.5s;
+            animation: flybuttons 2.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes flybuttons {
+    from {
+      bottom: -700px;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
+  
+  @keyframes flybuttons {
+    from {
+      bottom: -700px;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
+  .intro {
+    color: rgb(143, 65, 10);
+    text-shadow: 3px 3px 1px rgba(112, 85, 85, 0.229);
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-animation: fadeIn 1.5s infinite alternate;
+            animation: fadeIn 1.5s infinite alternate;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  #winner {
+    width: 115px;
+    -webkit-animation: spin 1.25s alternate 2;
+            animation: spin 1.25s alternate 2;
+  }
+  
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  body {
+    background-image: url("../assets/sea.png");
+    text-align: center;
+    background-size: 1925px;
+    margin: auto;
+  }
+  
+  input {
+    border-radius: 45%;
+    font-size: 20px;
+    background-color: rgba(245, 245, 220, 0.679);
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: inset -4px -4px 3px rgba(9, 21, 123, 0.724);
+    position: relative;
+  }
+  
+  #reset:hover {
+    background-color: rgb(255, 1, 77);
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95px;
+  }
+  
+  section {
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .intro1 {
+    font-size: 25px;
+  }
+  
+  #lifeSavers {
+    color: rgb(113, 9, 9);
+  }
+  
+  #result {
+    color: rgb(113, 9, 9);
+  }
