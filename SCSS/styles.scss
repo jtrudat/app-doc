@@ -1,9 +1,11 @@
 @use 'button';
-@use 'screen-size';
+@use 'small-screen';
 @use 'animations-fly';
 @use 'animations-fade-in';
 @use 'animations-spin';
+@use 'sass:math';
 
+$statistics-color: rgb(113, 9, 9);
 
 body{
     background-image: url("../assets/sea.png");
@@ -13,7 +15,7 @@ body{
 }
 
 input{
-    border-radius: 45%;
+    border-radius: math.div(45px, 100px)*100%;
     font-size: 20px;
     background-color: rgba(245, 245, 220, 0.679);
     padding: 15px;
@@ -47,11 +49,11 @@ section{
 }
 
 #lifeSavers{
-    color: rgb(113, 9, 9);
+    color: $statistics-color;
 }
 
 #result{
-    color: rgb(113, 9, 9);
+    color: $statistics-color;
 }
 
 

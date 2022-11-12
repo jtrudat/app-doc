@@ -1,20 +1,22 @@
 $time: 2.5s;
 
-.rocky{
+@mixin animate{
     position: relative;
     animation: flybuttons $time ;
+}
+
+.rocky{
+    @include animate;
     animation-timing-function: ease-in;
 }
 
 .papery{
-    position: relative;
-    animation: flybuttons $time ;
+    @include animate;
     animation-timing-function: ease-out;
 }
 
 .cutty{
-    position: relative;
-    animation: flybuttons $time ;
+    @include animate;
     animation-timing-function: ease-in-out;
 }
 

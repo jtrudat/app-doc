@@ -30,13 +30,32 @@ button {
   #winner {
     width: 75px;
   }
-  #rock, #paper, #scissors {
+  #rock {
     width: 40px;
-    font-size: 0px;
+    font-size: 7px;
     padding-left: 0px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 0px;
+    margin-right: 5px;
+  }
+  #paper {
+    width: 40px;
+    font-size: 7px;
+    padding-left: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 0px;
+    margin-right: 5px;
+  }
+  #scissors {
+    width: 40px;
+    font-size: 7px;
+    padding-left: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 0px;
+    margin-right: 5px;
   }
   #tops {
     font-size: 28px;
@@ -103,19 +122,19 @@ button {
 
 @-webkit-keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0%;
   }
   to {
-    opacity: 100;
+    opacity: 100%;
   }
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0%;
   }
   to {
-    opacity: 100;
+    opacity: 100%;
   }
 }
 #winner {
