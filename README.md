@@ -41,7 +41,7 @@ Statistics are automatically presented on:
 
 # Demo:
 Here's a snapshot of what the game looks like when you win a trophy
-!(./assets/rpsdemoimage.png)
+![RPS](/assets/rpsdemoimage.png)
 
 # Credits:
 - Inspirations for this game include various tournaments annually held at the Las Vegas HyperX Arena.
