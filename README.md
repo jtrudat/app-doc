@@ -8,7 +8,7 @@ a simple game of rock, paper, scissors. This is a 1 player game versus the compu
 - Credits
 
 # Installation:
-no need to install anything, just play
+no need to install anything, just play and have fun
 
 # Gameplay:
 upon game loading, simply choose and click the icon for either rock, paper, or scissors and view your progress against the computer for as many rounds as you like. You must have a percentage of at least 50% over 5 tries in order to win. After 5 rounds its more of a statistical game of how many trophies you can acquire and how many rounds you can go before losing.
