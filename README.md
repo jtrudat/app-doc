@@ -1,7 +1,9 @@
 # Project Title: 
 RPS: Rock Paper Scissors
+
 # Project description: 
 a simple game of rock, paper, scissors. This is a 1 player game versus the computer 
+
 # Table of contents:
 - Installation
 - Game play
@@ -39,7 +41,7 @@ Statistics are automatically presented on:
 
 # Demo:
 Here's a snapshot of what the game looks like when you win a trophy
-![/assets/rpsdemoimage.png]
+!(./assets/rpsdemoimage.png)
 
 # Credits:
 - Inspirations for this game include various tournaments annually held at the Las Vegas HyperX Arena.
