@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jtrudat/RPS-Rock-Paper-Scissors/issues"
   },
-  "homepage": "https://github.com/jtrudat/RPS-Rock-Paper-Scissors#readme"
+  "homepage": "https://github.com/jtrudat/RPS-Rock-Paper-Scissors#readme",
+  "devDependencies": {
+    "generate-changelog": "^1.8.0"
+  }
 }
