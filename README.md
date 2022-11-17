@@ -5,13 +5,17 @@ RPS: Rock Paper Scissors
 a simple game of rock, paper, scissors. This is a 1 player game versus the computer 
 
 # Table of contents:
+- Demo
 - Installation
 - Game play
 - Technologies
 - Controls
 - API documentation
-- Demo
 - Credits
+
+# Demo:
+Here's a snapshot of what the game looks like when you win a trophy
+![RPS](/assets/rpsdemoimage1.png)
 
 # Installation:
 No installation needed. This is a completely frontend application. Simply redirect to the provided URL and begin
@@ -38,10 +42,6 @@ Statistics are automatically presented on:
 
 # API documentation:
 - no API interaction was used for this project
-
-# Demo:
-Here's a snapshot of what the game looks like when you win a trophy
-![RPS](/assets/rpsdemoimage1.png)
 
 # Credits:
 - Inspirations for this game include various tournaments annually held at the Las Vegas HyperX Arena.
